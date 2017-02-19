@@ -14,8 +14,13 @@ app.get('/article-one',function(req,res) {
 });
 
 app.get('/article-two',function(req,res) {
-    res.send('Article two is selected and Server has handled it');
+    res.sendFile(path.join(__dirname,'ul','article-two.html')) 
 });
+
+app.get('/article-three',function(req,res) {
+    res.sendFile(path.join(__dirname,'ul','article-three.html')) 
+});
+
 
 app.get('/article-three',function(req,res) {
     res.send('Article three is selected and Server has handled it');
