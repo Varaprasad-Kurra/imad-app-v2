@@ -7,7 +7,7 @@ app.use(morgan('combined'));
 app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
-   var content=
+   var articleOne=
          {
          title:'Article One - by Varam',
          Heading:'Article one',
@@ -27,7 +27,11 @@ app.get('/', function (req, res) {
         </p>  
                   
          };
-
+var htmlTemplate={
+             `
+             
+             `
+}
 app.get('/article-one',function(req,res) {
     res.sendFile(path.join(__dirname, 'ui','article-one.html'));
 });
