@@ -27,10 +27,9 @@ app.get('/', function (req, res) {
         </p>  
                   
          };
-var htmlTemplate={
+var htmlTemplate =
              `
-             <!DOCtype html>
-<html>
+     <html>
     <head><title>Article-one IMAD</title></head>
     <h1>
     <a href='/' >Home</ a>
@@ -60,8 +59,8 @@ var htmlTemplate={
     </div>        
 </html>
              
-             `
-}
+     `;
+
 app.get('/article-one',function(req,res) {
     res.sendFile(path.join(__dirname, 'ui','article-one.html'));
 });
