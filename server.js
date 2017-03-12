@@ -25,41 +25,9 @@ app.get('/', function (req, res) {
 
                  - See more at: http://www.best-speech-topics.com/global-warming-speech.html#sthash.BshW9YJb.dpuf 
         </p>  
-                  
-         };
-var htmlTemplate =
-             `
-     <html>
-    <head><title>Article-one IMAD</title></head>
-    <h1>
-    <a href='/' >Home</ a>
-    </h1>
-     <link href="/ui/style.css" rel="stylesheet" />
-    <meta name="viewport" content="width-device-width" initial-scale-1 />
-    <div class="container">
-    <div>
-        <p>My Fist Article</p>
-    </div>
-    <div>
-       <p>
-             "That so many of us are here today is a recognition that the threat from climate change is serious, it is urgent, and it is growing. Our generation's response to this challenge will be judged by history, for if we fail to meet it - boldly, swiftly, and together - we risk consigning future generations to an irreversible catastrophe."
-
-             These are the words President Obama used to begin his global warming speech before the United Nations Summit in 2009.
-
-             Search Google for global warming and you will get almost 65 million pages of results.
-       
-            The subject has certainly drawn a lot of attention. But just what is global warming? What is causing it? What effects does it have on the earth and its inhabitants? What are some possible solutions? These are the questions that I will be addressing in this short, informative speech today.
-
-            What is Global Warming?
-
-                 - See more at: http://www.best-speech-topics.com/global-warming-speech.html#sthash.BshW9YJb.dpuf 
-        </p>  
-        
-    </div>
-    </div>        
-</html>
-             
-
+    };
+            
+  
      
 app.get('/hash/:input',function(req,res)
    {
