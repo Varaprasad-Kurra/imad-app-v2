@@ -59,7 +59,7 @@ var htmlTemplate =
     </div>        
 </html>
              
-     `;
+
      
 app.get('/hash/:input',function(req,res)
    {
