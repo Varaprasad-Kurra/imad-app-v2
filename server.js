@@ -60,7 +60,18 @@ var htmlTemplate =
 </html>
              
      `;
-
+     
+app.get('/hash/:input',function(req,res)
+   {
+    var hashedString=hash(req.params.input,'this-is-a-random-string');
+    res.send(hashedString);
+   }
+   
+  function hash(input,salt)
+    {
+        var hashed=crypto.pbkdf2Sync(input,salt,100,512,'Sha512');
+        return hashed.toString('hex');
+    }
 app.get('/article-one',function(req,res) {
     res.sendFile(path.join(__dirname, 'ui','article-one.html'));
 });
